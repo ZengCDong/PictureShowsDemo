@@ -11,8 +11,8 @@
 		D681959A24A0F3EC00DA24F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D681959924A0F3EC00DA24F8 /* Assets.xcassets */; };
 		D681959D24A0F3EC00DA24F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D681959B24A0F3EC00DA24F8 /* LaunchScreen.storyboard */; };
 		D68195A024A0F3EC00DA24F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D681959F24A0F3EC00DA24F8 /* main.m */; };
-		D68195AA24A0F3EC00DA24F8 /* _01__CClhDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68195A924A0F3EC00DA24F8 /* _01__CClhDemoTests.m */; };
-		D68195B524A0F3EC00DA24F8 /* _01__CClhDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68195B424A0F3EC00DA24F8 /* _01__CClhDemoUITests.m */; };
+		D68195AA24A0F3EC00DA24F8 /* PictureShowsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68195A924A0F3EC00DA24F8 /* PictureShowsDemoTests.m */; };
+		D68195B524A0F3EC00DA24F8 /* PictureShowsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68195B424A0F3EC00DA24F8 /* PictureShowsDemoUITests.m */; };
 		D68195C524A0F46100DA24F8 /* spring.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D68195C324A0F46100DA24F8 /* spring.fsh */; };
 		D68195C624A0F46100DA24F8 /* spring.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D68195C424A0F46100DA24F8 /* spring.vsh */; };
 		D68195C924A0F48100DA24F8 /* LongLegHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D68195C824A0F48100DA24F8 /* LongLegHelper.m */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D681958D24A0F3E800DA24F8 /* 001--PictureShowsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "001--PictureShowsDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D681958D24A0F3E800DA24F8 /* PictureShowsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureShowsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D681959024A0F3E800DA24F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D681959124A0F3E800DA24F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D681959924A0F3EC00DA24F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,10 +49,10 @@
 		D681959E24A0F3EC00DA24F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D681959F24A0F3EC00DA24F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68195A524A0F3EC00DA24F8 /* PictureShowsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureShowsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68195A924A0F3EC00DA24F8 /* _01__CClhDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _01__CClhDemoTests.m; sourceTree = "<group>"; };
+		D68195A924A0F3EC00DA24F8 /* PictureShowsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureShowsDemoTests.m; sourceTree = "<group>"; };
 		D68195AB24A0F3EC00DA24F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68195B024A0F3EC00DA24F8 /* PictureShowsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureShowsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68195B424A0F3EC00DA24F8 /* _01__CClhDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _01__CClhDemoUITests.m; sourceTree = "<group>"; };
+		D68195B424A0F3EC00DA24F8 /* PictureShowsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureShowsDemoUITests.m; sourceTree = "<group>"; };
 		D68195B624A0F3EC00DA24F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68195C324A0F46100DA24F8 /* spring.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = spring.fsh; sourceTree = "<group>"; };
 		D68195C424A0F46100DA24F8 /* spring.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = spring.vsh; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		D681958E24A0F3E800DA24F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D681958D24A0F3E800DA24F8 /* 001--PictureShowsDemo.app */,
+				D681958D24A0F3E800DA24F8 /* PictureShowsDemo.app */,
 				D68195A524A0F3EC00DA24F8 /* PictureShowsDemoTests.xctest */,
 				D68195B024A0F3EC00DA24F8 /* PictureShowsDemoUITests.xctest */,
 			);
@@ -134,7 +134,7 @@
 		D68195A824A0F3EC00DA24F8 /* PictureShowsDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				D68195A924A0F3EC00DA24F8 /* _01__CClhDemoTests.m */,
+				D68195A924A0F3EC00DA24F8 /* PictureShowsDemoTests.m */,
 				D68195AB24A0F3EC00DA24F8 /* Info.plist */,
 			);
 			path = PictureShowsDemoTests;
@@ -143,7 +143,7 @@
 		D68195B324A0F3EC00DA24F8 /* PictureShowsDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D68195B424A0F3EC00DA24F8 /* _01__CClhDemoUITests.m */,
+				D68195B424A0F3EC00DA24F8 /* PictureShowsDemoUITests.m */,
 				D68195B624A0F3EC00DA24F8 /* Info.plist */,
 			);
 			path = PictureShowsDemoUITests;
@@ -181,7 +181,7 @@
 			);
 			name = PictureShowsDemo;
 			productName = "001--CClhDemo";
-			productReference = D681958D24A0F3E800DA24F8 /* 001--PictureShowsDemo.app */;
+			productReference = D681958D24A0F3E800DA24F8 /* PictureShowsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D68195A424A0F3EC00DA24F8 /* PictureShowsDemoTests */ = {
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68195AA24A0F3EC00DA24F8 /* _01__CClhDemoTests.m in Sources */,
+				D68195AA24A0F3EC00DA24F8 /* PictureShowsDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68195B524A0F3EC00DA24F8 /* _01__CClhDemoUITests.m in Sources */,
+				D68195B524A0F3EC00DA24F8 /* PictureShowsDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
-				PRODUCT_NAME = "001--PictureShowsDemo";
+				PRODUCT_NAME = PictureShowsDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -486,7 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
-				PRODUCT_NAME = "001--PictureShowsDemo";
+				PRODUCT_NAME = PictureShowsDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -502,10 +502,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CC.-01--CClhDemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/001--CClhDemo.app/001--CClhDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureShowsDemo.app/PictureShowsDemo";
 			};
 			name = Debug;
 		};
@@ -520,10 +520,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CC.-01--CClhDemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/001--CClhDemo.app/001--CClhDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureShowsDemo.app/PictureShowsDemo";
 			};
 			name = Release;
 		};
@@ -531,16 +531,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "001--CClhDemoUITests/Info.plist";
+				INFOPLIST_FILE = PictureShowsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CC.-01--CClhDemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "001--CClhDemo";
+				TEST_TARGET_NAME = PictureShowsDemo;
 			};
 			name = Debug;
 		};
@@ -548,16 +548,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "001--CClhDemoUITests/Info.plist";
+				INFOPLIST_FILE = PictureShowsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CC.-01--CClhDemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PictureShowsDemo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "001--CClhDemo";
+				TEST_TARGET_NAME = PictureShowsDemo;
 			};
 			name = Release;
 		};

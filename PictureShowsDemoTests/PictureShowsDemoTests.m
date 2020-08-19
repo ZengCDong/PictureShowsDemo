@@ -1,18 +1,18 @@
 //
-//  _01__CClhDemoTests.m
-//  001--CClhDemoTests
+//  _01__PictureShowsDemoTests.m
+//  001--PictureShowsDemoTests
 //
-//  Created by CC老师 on 2020/6/22.
-//  Copyright © 2020年 CC老师. All rights reserved.
+//  Created by ZengCDing on 2020/8/19.
+//  Copyright © 2020年 ZengCDing. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface _01__CClhDemoTests : XCTestCase
+@interface PictureShowsDemoTests : XCTestCase
 
 @end
 
-@implementation _01__CClhDemoTests
+@implementation PictureShowsDemoTests
 
 - (void)setUp {
     [super setUp];

@@ -2,19 +2,19 @@
 //  ViewController.m
 //  001--lhDemo
 //
-//  Created by CC老师 on 2020/6/11.
-//  Copyright © 2020年 CC老师. All rights reserved.
+//  Created by ZengCDing on 2020/6/11.
+//  Copyright © 2020年 ZengCDing. All rights reserved.
 //
 
 #import <Photos/Photos.h>
 
-#import "MFSpringView.h"
+#import "LongLegView.h"
 
 #import "ViewController.h"
 
-@interface ViewController () <MFSpringViewDelegate>
+@interface ViewController () <LongLegViewViewDelegate>
 
-@property (weak, nonatomic) IBOutlet MFSpringView *springView;
+@property (weak, nonatomic) IBOutlet LongLegView *springView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topLineSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLineSpace;
 //top按钮
@@ -80,7 +80,6 @@
 
 - (CGFloat)stretchAreaYWithLineSpace:(CGFloat)lineSpace {
     
-    //
     return (lineSpace / self.springView.bounds.size.height - self.springView.textureTopY) / self.springView.textureHeight;
 }
 
@@ -101,6 +100,7 @@
     //currentBottom * textureOriginHeight + (1 - textureOriginHeight)/2 * springViewHeight;
     self.bottomLineSpace.constant = ((self.currentBottom * textureOriginHeight) + (1 - textureOriginHeight) / 2) * self.springView.bounds.size.height;
      NSLog(@"self.bottomLineSpace.constant %f",self.bottomLineSpace.constant);
+    
 }
 
 //相关控件隐藏功能
@@ -135,14 +135,22 @@
     
     //修改约束信息;
     CGPoint translation = [pan translationInView:self.view];
+    //修改topLineSpace的预算条件;
     self.topLineSpace.constant = MIN(self.topLineSpace.constant + translation.y,
                                      self.bottomLineSpace.constant);
     
     //纹理Top = springView的height * textureTopY
+    //606
     CGFloat textureTop = self.springView.bounds.size.height * self.springView.textureTopY;
+    NSLog(@"%f,%f",self.springView.bounds.size.height,self.springView.textureTopY);
+    NSLog(@"%f",textureTop);
+    
+    //设置topLineSpace的约束常量;
     self.topLineSpace.constant = MAX(self.topLineSpace.constant, textureTop);
+    //将pan移动到view的Zero位置;
     [pan setTranslation:CGPointZero inView:self.view];
     
+    //计算移动了滑块后的currentTop和currentBottom
     self.currentTop = [self stretchAreaYWithLineSpace:self.topLineSpace.constant];
     self.currentBottom = [self stretchAreaYWithLineSpace:self.bottomLineSpace.constant];
 }
@@ -169,9 +177,15 @@
 //当Slider的值发生改变时,直接影响springView中纹理的计算
 - (IBAction)sliderValueDidChanged:(UISlider *)sender {
    
-    //获取图片的新高度;
-    //拉伸后的图片高度: (currentBottom - currentTop)*sliderValue + 0.5;
+   
+    
+    //获取图片的中间拉伸区域高度;
+    //获取图片的中间拉伸区域高度: (currentBottom - currentTop)*sliderValue + 0.5;
     CGFloat newHeight = (self.currentBottom - self.currentTop) * ((sender.value) + 0.5);
+     NSLog(@"%f",sender.value);
+    NSLog(@"%f",newHeight);
+    
+   
     //将currentTop和currentBottom以及新图片的高度传给springView,进行拉伸操作;
     [self.springView stretchingFromStartY:self.currentTop
                                    toEndY:self.currentBottom
@@ -198,7 +212,7 @@
 
 #pragma mark - MFSpringViewDelegate
 //代理方法(SpringView拉伸区域修改)
-- (void)springViewStretchAreaDidChanged:(MFSpringView *)springView {
+- (void)springViewStretchAreaDidChanged:(LongLegView *)springView {
     
     //拉伸结束后,更新topY,bottomY,topLineSpace,bottomLineSpace 位置;
     CGFloat topY = self.springView.bounds.size.height * self.springView.stretchAreaTopY;
